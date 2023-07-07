@@ -1,0 +1,8 @@
+# Android_MusicPlayer
+1.Android Studio开发，安卓开发版本5.1，自动检索媒体库中的曲目的简单本地音乐播放器
+2.音乐文件可以上传至你的虚拟机设备sdcard/Music目录下重启后自动刷新媒体库
+3.MainActivity为音乐播放列表Activity文件
+4.Player为播放器的Activity文件
+5.MyAdapter为列表使用的BaseAdapter子类
+6.Song为歌曲的构造对象
+7.SongTools中编写了播放器实现需要的一些小功能

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/icon_list"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="播放列表"
+            android:textSize="23sp"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/playlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="68dp"
+        android:background="#F8F8F8"
+        android:dividerHeight="1dp"
+        android:headerDividersEnabled="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/now_playing_bar">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/now_playing"
+            android:id="@+id/now_playing_songfront"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/now_playing_songname_tv"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="正在播放"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/now_playing_pause_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/play_blue" />
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/next_ap"
+                android:layout_centerVertical="true"
+                android:id="@+id/now_playing_next_btn"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
